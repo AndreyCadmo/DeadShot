@@ -12,6 +12,12 @@
     border-radius: 0.5vw;
     object-fit: cover;
     width: 100%;
+    transition: 0.5s;
+}
+
+.cardgame .image img:hover {
+    transform: scale(110%);
+    transition: 0.5s;
 }
 
 .cardgame .details {
