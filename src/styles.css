@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --font-p: "Righteous", sans-serif;
+    --background-p: #292C37;
+    --header-color: #181A23;
+    --color-font: #cccccc;
+    --color-search: #6B6B6B;
+}
+
+body {
+    font-family: var(--font-p);
+    background-color: var(--background-p);
+    margin: 0;
+    color: var(--color-font);
+}
+
+.router-content {
+    padding: 0 6vw;
+}
