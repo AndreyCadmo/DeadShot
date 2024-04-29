@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  height: 5vw;
+  background-color: var(--header-color);
+  justify-content: space-between;
+}
+
+header .icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.3vw;
+}
+
+header .icon img {
+    width: 6vw;
+}
+
+header .search {
+  display: flex;
+  gap: 2vw;
+  padding-right: 1vw;
+  align-items: center;
+
+}
+
+header .search input {
+    height: 2vw;
+    width: 15vw;
+    font-size: 1vw;
+    background-color: var(--color-search);
+    border-radius: 2vw;
+}
+
+header .search .profile {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+}
