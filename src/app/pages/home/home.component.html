@@ -1,12 +1,12 @@
 <section class="notice">
   <div class="oneNotice">
-    <img src="../../../assets/notice/noticeOne.png" alt="" />
+    <img [src]="imageUrl" alt="Imagem" id="image"/>
   </div>
   <div class="otherNotice">
-    <img src="../../../assets/notice/noticeTwo.jpg" alt="" />
-    <img src="../../../assets/notice/noticeThree.jpg" alt="" />
-    <img src="../../../assets/notice/noticeFour.jpg" alt="" />
-    <img src="../../../assets/notice/noticeFive.jpg" alt="" />
+    <img src="../../../assets/notice/noticeTwo.jpg" alt="" (click)="mudarImage('../../../assets/notice/noticeTwo.jpg')"/>
+    <img src="../../../assets/notice/noticeThree.jpg" alt="" (click)="mudarImage('../../../assets/notice/noticeThree.jpg')"/>
+    <img src="../../../assets/notice/noticeFour.jpg" alt="" (click)="mudarImage('../../../assets/notice/noticeFour.jpg')"/>
+    <img src="../../../assets/notice/noticeFive.jpg" alt="" (click)="mudarImage('../../../assets/notice/noticeFive.jpg')"/>
   </div>
 </section>
 
