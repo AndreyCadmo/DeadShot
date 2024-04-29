@@ -1,18 +1,92 @@
 <section class="notice">
-    <div class="oneNotice">
-        <img src="../../../assets/notice/noticeOne.png" alt="">
-    </div>
-    <div class="otherNotice">
-        <img src="../../../assets/notice/noticeTwo.jpg" alt="">
-        <img src="../../../assets/notice/noticeThree.jpg" alt="">
-        <img src="../../../assets/notice/noticeFour.jpg" alt="">
-        <img src="../../../assets/notice/noticeFive.jpg" alt="">
-    </div>
+  <div class="oneNotice">
+    <img src="../../../assets/notice/noticeOne.png" alt="" />
+  </div>
+  <div class="otherNotice">
+    <img src="../../../assets/notice/noticeTwo.jpg" alt="" />
+    <img src="../../../assets/notice/noticeThree.jpg" alt="" />
+    <img src="../../../assets/notice/noticeFour.jpg" alt="" />
+    <img src="../../../assets/notice/noticeFive.jpg" alt="" />
+  </div>
 </section>
 
 <section class="demos">
-    <h1>DEMOS EM DESTAQUE</h1>
-    <div class="card-list">
-        <app-card-game *ngFor="let content of cards" [game]="content"></app-card-game>
+  <h1 class="titulo-section">DEMOS EM DESTAQUE</h1>
+  <div class="card-list">
+    <app-card-game
+      *ngFor="let content of cards"
+      [game]="content"
+    ></app-card-game>
+  </div>
+</section>
+
+<section class="buttons">
+  <button type="button">ADICIONE SEU JOGO</button>
+  <button type="button">JOGOS GRATUITOS</button>
+  <button type="button">ACESSO ANTECIPADO</button>
+</section>
+
+<section class="category">
+  <div class="maisJogados">
+    <div class="maisJogados1">
+      <h1>MAIS JOGADOS</h1>
     </div>
+  </div>
+  <div class="promocao">
+    <h1>PROMOÇÕES</h1>
+    <p>NOVAS PROMOÇÕES TODAS AS SEMANAS</p>
+  </div>
+</section>
+
+<section class="nextRelease">
+  <h1 class="titulo-section">PRÓXIMOS LANÇAMENTOS</h1>
+  <div class="release-content">
+    <div class="card-release">
+      <div class="release-image">
+        <img src="../../../assets/release/redeViganca.png" alt="" />
+      </div>
+      <div class="release-details">
+        <h1>REDE DE VINGANÇA</h1>
+        <h1>20/10/2024</h1>
+      </div>
+    </div>
+
+    <div class="card-release">
+      <div class="release-image">
+        <img src="../../../assets/release/reflexosMortais.png" alt="" />
+      </div>
+      <div class="release-details">
+        <h1>REFLEXOS MORTAIS</h1>
+        <h1>15/01/2025</h1>
+      </div>
+    </div>
+
+    <div class="card-release">
+      <div class="release-image">
+        <img src="../../../assets/release/sangueAco.png" alt="" />
+      </div>
+      <div class="release-details">
+        <h1>SANGUE DE AÇO</h1>
+        <h1>30/4/2025</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="emBreve">
+    <h1 class="titulo-section">EM BREVE UMA NOVA IMERSÃO</h1>
+    <div class="emBreve-content">
+    <h1>Arsenal Infinito: Campo de Batalha</h1>
+    <p>
+      Embarque em uma experiência sem precedentes de combate FPS, onde cada
+      detalhe é moldado pela sua criatividade. Arsenal Infinito oferece um campo
+      de batalha altamente customizável, onde você define as regras, os mapas e
+      até mesmo as armas. Seja um arquiteto da destruição, criando arenas épicas
+      para desafiar seus amigos ou participando de combates intensos em cenários
+      nunca antes vistos. Com uma variedade infinita de opções de
+      personalização, sua jornada no Arsenal Infinito é limitada apenas pela sua
+      imaginação. Entre no campo de batalha e deixe sua marca na história do
+      combate virtual
+    </p>
+  </div>
 </section>

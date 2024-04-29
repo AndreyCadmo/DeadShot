@@ -1,42 +1,162 @@
 .notice {
-    margin-top: 2vw;
-    display: flex;
-    gap: 1vw;
-    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25))
+  margin-top: 2vw;
+  display: flex;
+  gap: 1vw;
+  filter: var(--sobreamento);
 }
 
-.oneNotice{
-    flex: 1;
-    display: flex;
-    height: 25vw;
-    width: 80vw;
+.oneNotice {
+  flex: 1;
+  display: flex;
+  height: 25vw;
+  width: 80vw;
 }
 .oneNotice img {
-    object-position: top;
-    object-fit: cover;
-    width: 100%;
+  object-position: top;
+  object-fit: cover;
+  width: 100%;
 }
 .otherNotice {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
 }
 
-.otherNotice img{
-    width: 10vw;
-    height:1;
+.otherNotice img {
+  width: 10vw;
+  height: 1;
 }
 
-.oneNotice img, .otherNotice img {
-    border-radius: 1vw;
+.oneNotice img,
+.otherNotice img {
+  border-radius: 1vw;
 }
 
 .card-list {
-    display: flex;
-    gap: 3vw;
+  display: flex;
+  gap: 2.8vw;
 }
 
-.demos h1 {
-    font-size: 1.5vw;
-    margin: 4vw 0 3vw 0;
+.buttons {
+  margin: 2vw 0;
+  display: flex;
+  gap: 2vw;
+}
+
+.buttons button {
+  flex: 1;
+  color: var(--font-color);
+  background-color: var(--buttons-home);
+  border: none;
+  font-size: 1.2vw;
+  border-radius: 1vw;
+  padding: 1vw 0;
+}
+
+.maisJogados,
+.maisJogados img,
+.promocao {
+  flex: 1;
+  border-radius: 1vw;
+  height: 25vw;
+}
+.promocao {
+  background: linear-gradient(
+    to right,
+    var(--background-promotion1),
+    var(--background-promotion2)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: var(--sobreamento);
+}
+.promocao h1,
+p {
+  margin: 0;
+}
+.promocao h1 {
+  font-size: 3vw;
+}
+.promocao p {
+  font-size: 0.8vw;
+}
+.maisJogados {
+  background-image: url("../../../assets/categorys/maisJogados.png");
+  background-repeat: no-repeat;
+  background-size: 115%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  filter: var(--sobreamento);
+}
+
+.maisJogados1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--background-maisJogados);
+  border-radius: 0 0 1vw 1vw;
+}
+.maisJogados1 h1 {
+  font-size: 2vw;
+  margin: 1vw 0;
+}
+
+.category {
+  gap: 2vw;
+  display: flex;
+}
+
+.card-release {
+  flex: 1;
+}
+.release-content {
+  display: flex;
+  gap: 2vw;
+}
+.release-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw 2vw 2.5vw 2.5vw;
+}
+.release-details {
+  display: flex;
+  padding: 0 0.5vw;
+  justify-content: space-between;
+}
+.release-details h1,
+p {
+  margin: 0;
+  font-size: 1vw;
+}
+
+.titulo-section {
+  margin: 4vw 0 3vw 0;
+  font-size: 1.5vw;
+}
+
+.emBreve-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 25vw;
+  padding: 2vw 1vw;
+  margin-bottom: 2vw;
+  border-radius: 2vw;
+  position: relative;
+  background-image: url("../../../assets/categorys/arsenal.png");
+  background-size: 100%;
+}
+
+.emBreve-content h1 {
+  font-size: 1.5vw;
+  z-index: 3;
+}
+
+.emBreve-content p {
+  font-size: 1.2vw;
 }
