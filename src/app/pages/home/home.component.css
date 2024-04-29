@@ -1,0 +1,30 @@
+.notice {
+    margin-top: 2vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.oneNotice{
+    flex: 1;
+    display: flex;
+    height: 25vw;
+    width: 80vw;
+}
+.oneNotice img {
+    object-position: top;
+    object-fit: cover;
+    width: 100%;
+}
+.otherNotice {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+.otherNotice img{
+    width: 10vw;
+    height:1;
+}
+
+.oneNotice img, .otherNotice img {
+    border-radius: 1vw;
+}
