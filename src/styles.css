@@ -4,6 +4,11 @@
     --header-color: #181A23;
     --color-font: #cccccc;
     --color-search: #6B6B6B;
+    --buttons-home: #484848;
+    --background-promotion1: #B11623;
+    --background-promotion2: #7C060E;
+    --background-maisJogados: #9f111a9c;
+    --sobreamento: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
 body {
