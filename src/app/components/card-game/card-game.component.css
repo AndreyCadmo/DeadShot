@@ -1,0 +1,37 @@
+.cardgame {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+.cardgame .image {
+    display: flex;
+    align-items: center;
+}
+.cardgame .image img {
+    border-radius: 0.5vw;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cardgame .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardgame .name p {
+    font-size: 1vw;
+}
+.cardgame .details h5 {
+    font-size: 0.5vw;
+}
+.cardgame .details h5, p {
+    margin: 0;
+}
+.cardgame .details {
+    padding: 1vw 0;
+}
+
+.cardgame .price p{
+    font-size: 0.7vw;
+}
