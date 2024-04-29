@@ -12,5 +12,7 @@
 
 <section class="demos">
     <h1>DEMOS EM DESTAQUE</h1>
-    <div></div>
+    <div class="card-list">
+        <app-card-game *ngFor="let content of cards" [game]="content"></app-card-game>
+    </div>
 </section>
