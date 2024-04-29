@@ -96,6 +96,11 @@ p {
   filter: var(--sobreamento);
 }
 
+.maisJogados:hover , .promocao:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
 .maisJogados1 {
   display: flex;
   justify-content: center;
