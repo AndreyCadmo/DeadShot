@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  height: 5vw;
+  background-color: var(--header-color);
+  justify-content: space-between;
+}
+
+footer .icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.3vw;
+}
+
+footer .icon img {
+  width: 6vw;
+}
+
+.dev {
+    display: flex;
+    gap: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+.dev p, .icon h1 {
+    margin: 0;
+    font-size: 0.8vw;
+    font-weight: 100;
+}
