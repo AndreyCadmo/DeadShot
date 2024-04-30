@@ -12,6 +12,7 @@
 }
 
 body {
+  user-select: none;
   font-family: var(--font-p);
   background-color: var(--background-p);
   margin: 0;
