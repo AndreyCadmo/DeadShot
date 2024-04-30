@@ -55,6 +55,7 @@
   font-size: 1.2vw;
   border-radius: 1vw;
   padding: 1vw 0;
+  cursor: pointer;
 }
 
 .maisJogados,
