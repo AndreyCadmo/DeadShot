@@ -3,7 +3,6 @@ import { gamelist } from "../../pages/home/home.component"
 import { RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
 import { CommonModule } from "@angular/common";
 
-type gameid = string;
 @Component({
   selector: "app-card-game",
   standalone: true,
