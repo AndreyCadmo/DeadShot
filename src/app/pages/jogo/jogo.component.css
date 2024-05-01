@@ -1,8 +1,7 @@
 .game-details {
-  margin: 2vw 0;
   display: flex;
+  flex-direction: column;
   gap: 1vw;
-  flex-direction: row;
 }
 
 .game-imagens {
@@ -33,6 +32,7 @@
 
 .game-container {
   display: flex;
+  width: 24vw;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--background-game-details);
@@ -69,4 +69,66 @@
 }
 .category {
   font-size: 1vw;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.game-description {
+  display: flex;
+  flex-direction: column;
+}
+.game-description p {
+  margin: 0;
+}
+
+.game-name {
+  font-size: 2vw;
+  margin-right: 1.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-page{
+  display: flex;
+  margin: 2vw 0;
+  gap: 2vw;
+}
+
+.game-buy {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-game-info);
+  padding: 1vw;
+  border-radius: 1vw;
+  margin-top: 2vw;
+  align-items: center;
+  font-size: 1vw;
+}
+
+.game-buy button {
+  color: var(--font-p);
+  border: none;
+  border-radius: 1vw;
+  font-size: 1vw;
+  padding: 0.5vw 2vw;
+  background-color: var(--button-game);
+}
+
+.about-game {
+  padding: 2vw 0;
+  font-size: 1.2vw;
+}
+
+.about-content {
+  font-size: 1.1vw;
+}
+
+.game-requirements h2{
+  margin: 1vw 0;
+  font-size: 1.2vw;
 }
