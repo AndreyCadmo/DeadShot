@@ -12,4 +12,8 @@ import { CommonModule } from "@angular/common";
 })
 export class CardGameComponent {
   @Input({ required: false }) game!: gamelist;
+
+  scrollToTop = function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 }
