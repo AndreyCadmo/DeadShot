@@ -1,14 +1,19 @@
 <div class="cardgame">
-    <div class="image">
-        <img src="{{ game.image }}" alt="">
+  <div
+    class="image"
+    routerLink="/jogo/{{ game.id}}"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+  >
+    <img src="{{ game.image }}" alt="" />
+  </div>
+  <div class="details">
+    <div class="name">
+      <h5>JOGO DEMO</h5>
+      <p>{{ game.name }}</p>
     </div>
-    <div class="details">
-        <div class="name">
-            <h5>JOGO DEMO</h5>
-            <p>{{ game.name }}</p>
-        </div>
-        <div class="price">
-            <p>{{ game.price }}</p>
-        </div>
+    <div class="price">
+      <p>{{ game.price }}</p>
     </div>
+  </div>
 </div>
