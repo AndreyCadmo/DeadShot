@@ -8,12 +8,14 @@
   --background-promotion1: #b11623;
   --background-promotion2: #7c060e;
   --background-maisJogados: #9f111a9c;
+  --background-game-details: #181A23 ;
   --sobreamento: drop-shadow(0vw 2vw 2vw rgba(0, 0, 0, 0.25));
 }
 
 body {
   user-select: none;
   font-family: var(--font-p);
+  font-weight: 100;
   background-color: var(--background-p);
   margin: 0;
   color: var(--color-font);
