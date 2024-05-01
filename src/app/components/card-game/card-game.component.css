@@ -18,6 +18,7 @@
 .cardgame .image img:hover {
     transform: scale(110%);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .cardgame .details {
