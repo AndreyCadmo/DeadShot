@@ -1,22 +1,63 @@
-<section class="game-details">
-  <div class="game-imagens">
-    <div class="game-imageOne">
-      <img src="{{ gameImage1 }}" alt="" />
+<section class="game-page">
+  <section class="game-details">
+    <div class="game-imagens">
+      <div class="game-imageOne">
+        <img src="{{ gameImage1 }}" alt="" />
+      </div>
+      <div class="game-ImageOther">
+        <img src="{{ gameImage2 }}" alt="" />
+        <img src="{{ gameImage3 }}" alt="" />
+        <img src="{{ gameImage4 }}" alt="" />
+      </div>
     </div>
-    <div class="game-ImageOther">
-      <img src="{{ gameImage2 }}" alt="" />
-      <img src="{{ gameImage3 }}" alt="" />
-      <img src="{{ gameImage4 }}" alt="" />
+    <div class="game-description">
+      <div class="game-name">
+        <p>{{ gameName.toUpperCase() }}</p>
+        <p>GRATUITO</p>
+      </div>
+      <div class="game-buy">
+        <p>JOGO DE DEMONSTRAÇÃO ( JOGO COMPLETO EM BREVE )</p>
+        <button>PEGAR JOGO</button>
+      </div>
+      <div class="game-history">
+        <p class="about-game">{{ gameName }}:</p>
+        <p class="about-content">{{ gameHistory }}</p>
+      </div>
     </div>
-  </div>
-  <div class="game-container">
-    <div class="game-resume">
-      <h1>DESCRIÇÃO</h1>
-      <p>{{ gameDescription }}</p>
+  </section>
+
+  <section class="game-info">
+    <div class="game-container">
+      <div class="game-resume">
+        <h1>DESCRIÇÃO</h1>
+        <p>{{ gameDescription }}</p>
+      </div>
+      <div class="game-category">
+        <p class="category">Categoria: {{ gameCategory }}</p>
+        <p class="year-old">{{ gameYearOld }}+</p>
+      </div>
     </div>
-    <div class="game-category">
-      <p class="category">Categoria: {{ gameCategory }}</p>
-      <p class="year-old">{{ gameYearOld }}+</p>
+    <div class="game-container">
+      <div class="game-resume">
+        <h1>REQUISITOS</h1>
+        <div class="game-requirements">
+
+        <h2>MÍNIMOS:</h2>
+        <p>OS: Windows 7 Starter Edition</p>
+        <p>Processador: Intel Celeron N3050 ou similar</p>
+        <p>Memória: 2 GB DDR3</p>
+        <p>Placa de vídeo: Integrada Intel HD Graphics ou similar</p>
+        <p>Armazenamento: 64 GB eMMC</p>
+        <p>Rede: conexão de banda larga à internet.</p>
+
+        <h2>RECOMENDADOS:</h2>
+        <p>OS: Windows 11 Pro ou Ubuntu 22.04 LTS</p>
+        <p>Processador: Intel Core i9-12900K ou AMD Ryzen 9 5950X</p>
+        <p>Memória: 128 GB DDR5</p>
+        <p>Placa de vídeo: NVIDIA GeForce RTX 4090 ou AMD Radeon RX 7900 XT</p>
+        <p>Armazenamento: 4 TB SSD NVMe PCIe 4.0</p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </section>
