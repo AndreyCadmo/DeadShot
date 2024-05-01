@@ -10,6 +10,8 @@
   --background-maisJogados: #9f111a9c;
   --background-game-details: #181A23 ;
   --sobreamento: drop-shadow(0vw 2vw 2vw rgba(0, 0, 0, 0.25));
+  --background-game-info: #303030b7;
+  --button-game: #00031C ;
 }
 
 body {
