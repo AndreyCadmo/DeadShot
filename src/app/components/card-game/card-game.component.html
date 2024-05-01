@@ -4,6 +4,7 @@
     routerLink="/jogo/{{ game.id}}"
     routerLinkActive="active"
     ariaCurrentWhenActive="page"
+    (click)="scrollToTop()"
   >
     <img src="{{ game.image }}" alt="" />
   </div>
