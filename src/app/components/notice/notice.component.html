@@ -1,0 +1,13 @@
+<section class="notice">
+  <div class="oneNotice">
+    <img [src]="actualImage" alt="Imagem" id="image" />
+  </div>
+  <div class="otherNotice">
+    <img
+      *ngFor="let content of images; let i = index"
+      [src]="content"
+      alt=""
+      (click)="mudarImage(i)"
+    />
+  </div>
+</section>

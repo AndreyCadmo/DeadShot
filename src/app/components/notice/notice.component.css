@@ -1,0 +1,50 @@
+.notice {
+  margin-top: 2vw;
+  display: flex;
+  gap: 1vw;
+  filter: var(--sobreamento);
+}
+
+.oneNotice {
+  flex: 1;
+  display: flex;
+  height: 25vw;
+  width: 80vw;
+}
+.oneNotice img {
+  object-position: top;
+  object-fit: cover;
+  width: 100%;
+}
+.otherNotice {
+  overflow-y: auto;
+  max-height: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.otherNotice::-webkit-scrollbar {
+  width: 0.3vw;
+}
+.otherNotice::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.171);
+}
+
+.otherNotice::-webkit-scrollbar-thumb {
+  border-radius: 2vw;
+  border: 1vw solid rgb(3, 3, 3);
+}
+
+.otherNotice img {
+  width: 10vw;
+  height: 1;
+}
+
+.otherNotice img:hover {
+  cursor: pointer;
+}
+
+.oneNotice img,
+.otherNotice img {
+  border-radius: 1vw;
+}
