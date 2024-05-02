@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { CardGameComponent } from "../../components/card-game/card-game.component";
+import { NoticeComponent } from "../../components/notice/notice.component";
 
 export type gamelist = {
   image: string;
@@ -12,7 +13,7 @@ export type gamelist = {
 @Component({
   selector: "app-home",
   standalone: true,
-  imports: [CommonModule, CardGameComponent],
+  imports: [CommonModule, CardGameComponent, NoticeComponent],
   templateUrl: "./home.component.html",
   styleUrl: "./home.component.css",
 })
@@ -30,32 +31,32 @@ export class HomeComponent {
       image: "../../../../../assets/games/tiro2077/tiro2077.png",
       name: "Tiro 2077",
       price: "GRATUITO",
-      id: "1",
+      id: "tiro-2077",
     },
     {
       image: "../../../../../assets/games/cacadaCruel/cacadaCruel.png",
       name: "Caçada Cruel",
       price: "GRATUITO",
-      id: "2",
+      id: "cacada-cruel",
     },
     {
       image: "../../../../../assets/games/esquadraoElite/esquadraoElite.png",
       name: "Esquadrão de Elite",
       price: "GRATUITO",
-      id: "3",
+      id: "esquadrao-de-elite",
     },
     {
       image:
         "../../../../../assets/games/furiaFlonteirica/furiaFlonteirica.png",
       name: "Fúria Flonteiriça",
       price: "GRATUITO",
-      id: "4",
+      id: "furia-flonteirica",
     },
     {
       image: "../../../../../assets/games/blitzTatica/blitzTatica.png",
       name: "Blitz Tática",
       price: "GRATUITO",
-      id: "5",
+      id: "blitz-tatica",
     },
   ];
 }
