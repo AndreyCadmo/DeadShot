@@ -1,27 +1,31 @@
-# DeadShot
+# 🎮 Deadshot
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+## Descrição
+Deadshot é uma empresa fictícia especializada na distribuição digital de jogos. Este projeto acadêmico visa desenvolver um site usando o framework Angular para oferecer uma plataforma de distribuição de jogos online.
 
-## Development server
+## Wirefrime
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Página HOME:
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5qtTjiqRNWBTX4rQ5PtZOn%2FDEADSHOT-V2%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DmE996qeIK9JydvJM-1" allowfullscreen></iframe>
 
-## Code scaffolding
+Página do JOGO:
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5qtTjiqRNWBTX4rQ5PtZOn%2FDEADSHOT-V2%3Ftype%3Ddesign%26node-id%3D54%253A2%26mode%3Ddesign%26t%3DmE996qeIK9JydvJM-1" allowfullscreen></iframe>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalação & Como Usar
+1. Certifique-se de ter o Node.js instalado em seu sistema.
+2. Clone este repositório para sua máquina local.
+3. Navegue até o diretório do projeto.
+4. Execute `npm install` para instalar as dependências.
+5. Execute `npm run start` para iniciar o servidor de desenvolvimento.
 
-## Build
+## Créditos
+Este projeto foi desenvolvido como parte de um projeto acadêmico e não tem relação com nenhuma empresa ou produto real. Imagens foram feitas por inteligência artificial (IA).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Linguagens e Ferramentas
+<img width="40px" hspace="2px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title = "HTML5" width="40" height="40" />
+<img width="40px" hspace="2px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" title = "CSS3" width="40" height="40"/>
+<img width="40px" hspace="2px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" title = "TYPESCRIPT" width="40" height="40"/>
+<img width="40px" hspace="2px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" title = "ANGULAR9" width="40" height="40" />
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contato
+Para quaisquer dúvidas ou feedback, entre em contato comigo em [andreycadmo06@hotmail.com](mailto:andreycadmo06@hotmail.com).
