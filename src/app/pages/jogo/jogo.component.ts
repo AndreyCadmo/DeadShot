@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute, ParamMap } from "@angular/router";
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Router } from "@angular/router";
 
 const basePath = "../../../assets/games";
 
@@ -20,7 +21,7 @@ type imageType = {
 
 const jogos: jogoType[] = [
   {
-    id: "1",
+    id: "tiro-2077",
     name: "Tiro 2077",
     gameCategory: "Ação, Aventura, Ficção Ciêntifica e Multiplayer",
     gameDescription:
@@ -48,7 +49,7 @@ const jogos: jogoType[] = [
     ],
   },
   {
-    id: "2",
+    id: "cacada-cruel",
     name: "Caçada Cruel",
     gameCategory: "Ação, Aventura e Terror",
     gameDescription:
@@ -76,13 +77,14 @@ const jogos: jogoType[] = [
     ],
   },
   {
-    id: "3",
+    id: "esquadrao-de-elite",
     name: "Esquadrão de Elite",
     gameCategory: "Ação",
     gameDescription:
       'Esquadrão de Elite: é uma história envolvente sobre uma equipe de agentes especiais determinados a combater o crime em uma metrópole dominada pela corrupção. Liderados pelo Capitão Marcos, o Esquadrão enfrenta uma organização criminosa chamada "A Sombra", enquanto mergulha em uma teia de traições e conspirações que envolvem figuras poderosas da cidade. Com uma mistura de ação intensa, estratégia tática e escolhas morais difíceis, a narrativa coloca à prova a lealdade da equipe e a determinação em busca da justiça.',
     gameYearOld: "16",
-    gameHistory: "Prepare-se para liderar o Esquadrão de Elite em uma missão desesperada para salvar o mundo da iminente ameaça da organização terrorista conhecida como Tempestade Negra. Embarque nesta jornada repleta de ação e adrenalina, onde cada decisão pode significar a diferença entre a vitória e a derrota. Em Esquadrão de Elite, você assume o papel de um comandante habilidoso encarregado de montar e liderar uma equipe de operativos de elite. Equipados com o que há de melhor em armas e tecnologia, sua equipe é a última linha de defesa contra os planos malignos da Tempestade Negra de desencadear o caos global.",
+    gameHistory:
+      "Prepare-se para liderar o Esquadrão de Elite em uma missão desesperada para salvar o mundo da iminente ameaça da organização terrorista conhecida como Tempestade Negra. Embarque nesta jornada repleta de ação e adrenalina, onde cada decisão pode significar a diferença entre a vitória e a derrota. Em Esquadrão de Elite, você assume o papel de um comandante habilidoso encarregado de montar e liderar uma equipe de operativos de elite. Equipados com o que há de melhor em armas e tecnologia, sua equipe é a última linha de defesa contra os planos malignos da Tempestade Negra de desencadear o caos global.",
     images: [
       {
         alt: "image 1 do jogo 1",
@@ -103,13 +105,14 @@ const jogos: jogoType[] = [
     ],
   },
   {
-    id: "4",
+    id: "furia-flonteirica",
     name: "Fúria Flonteiriça",
     gameCategory: "Ação e Aventura",
     gameDescription:
       "Fúria Fronteiriça coloca os jogadores em um mundo pós-apocalíptico, onde enfrentam facções rivais e ameaças desconhecidas em uma fronteira desolada. Com armas improvisadas e habilidades de combate, os jogadores exploram ambientes hostis em busca de recursos e missões vitais. Com uma narrativa envolvente, gráficos realistas e uma trilha sonora imersiva, o jogo oferece uma experiência emocionante e intensa de sobrevivência e confronto.",
     gameYearOld: "18",
-    gameHistory: "Mergulha os jogadores em um cenário de caos e conflito em uma fronteira desolada e perigosa. Neste jogo de ação e sobrevivência, os jogadores encaram o desafio de sobreviver em um mundo onde a lei foi substituída pelo instinto de sobrevivência. No coração de uma terra devastada pela guerra, os jogadores assumem o papel de combatentes resistentes, lutando contra facções rivais, milícias mercenárias e ameaças desconhecidas que assolam a fronteira. Equipados com armas improvisadas e habilidades de combate, os jogadores exploram ambientes hostis em busca de recursos escassos e missões vitais para sua sobrevivência e a de suas comunidades. A narrativa cativante de Fúria Fronteiriça leva os jogadores por uma jornada emocionante, repleta de reviravoltas e dilemas morais, onde cada escolha pode determinar o destino dos personagens e das comunidades que encontram. Com gráficos realistas e uma trilha sonora imersiva, o jogo cria uma atmosfera intensa e visceral, capturando a essência de um mundo à beira do colapso.",
+    gameHistory:
+      "Mergulha os jogadores em um cenário de caos e conflito em uma fronteira desolada e perigosa. Neste jogo de ação e sobrevivência, os jogadores encaram o desafio de sobreviver em um mundo onde a lei foi substituída pelo instinto de sobrevivência. No coração de uma terra devastada pela guerra, os jogadores assumem o papel de combatentes resistentes, lutando contra facções rivais, milícias mercenárias e ameaças desconhecidas que assolam a fronteira. Equipados com armas improvisadas e habilidades de combate, os jogadores exploram ambientes hostis em busca de recursos escassos e missões vitais para sua sobrevivência e a de suas comunidades. A narrativa cativante de Fúria Fronteiriça leva os jogadores por uma jornada emocionante, repleta de reviravoltas e dilemas morais, onde cada escolha pode determinar o destino dos personagens e das comunidades que encontram. Com gráficos realistas e uma trilha sonora imersiva, o jogo cria uma atmosfera intensa e visceral, capturando a essência de um mundo à beira do colapso.",
     images: [
       {
         alt: "image 1 do jogo 1",
@@ -130,13 +133,14 @@ const jogos: jogoType[] = [
     ],
   },
   {
-    id: "5",
+    id: "blitz-tatica",
     name: "Blitz Tática",
     gameCategory: "Ação, Aventura e Multiplayer",
     gameDescription:
       "Blitz Tática é um jogo de estratégia tática que coloca os jogadores no comando de uma equipe de operadores de elite. Eles enfrentam missões críticas em diversos cenários, utilizando habilidades especializadas para superar desafios. Com uma narrativa envolvente, gráficos realistas e uma jogabilidade estratégica, os jogadores devem coordenar táticas e trabalhar em equipe para alcançar a vitória.",
     gameYearOld: "16",
-    gameHistory: "mergulha os jogadores em um campo de batalha tático de alta octanagem, onde cada movimento pode ser a diferença entre a vitória e a derrota. Neste jogo estratégico e intenso, os jogadores assumem o comando de uma equipe de operadores de elite, encarregados de missões críticas em ambientes variados e desafiadores. Com uma variedade de classes e habilidades especializadas à disposição, os jogadores devem coordenar táticas e estratégias para superar adversários em combates intensos e imprevisíveis. Desde operações de infiltração furtiva até confrontos diretos, cada missão apresenta desafios únicos que exigem criatividade, cooperação e precisão tática. A narrativa envolvente de Blitz Tática leva os jogadores por uma série de missões emocionantes, enquanto enfrentam ameaças globais e conspirações sinistras. Com gráficos realistas e efeitos sonoros imersivos, o jogo cria uma atmosfera de tensão e adrenalina, onde cada decisão pode ter consequências de longo alcance.",
+    gameHistory:
+      "mergulha os jogadores em um campo de batalha tático de alta octanagem, onde cada movimento pode ser a diferença entre a vitória e a derrota. Neste jogo estratégico e intenso, os jogadores assumem o comando de uma equipe de operadores de elite, encarregados de missões críticas em ambientes variados e desafiadores. Com uma variedade de classes e habilidades especializadas à disposição, os jogadores devem coordenar táticas e estratégias para superar adversários em combates intensos e imprevisíveis. Desde operações de infiltração furtiva até confrontos diretos, cada missão apresenta desafios únicos que exigem criatividade, cooperação e precisão tática. A narrativa envolvente de Blitz Tática leva os jogadores por uma série de missões emocionantes, enquanto enfrentam ameaças globais e conspirações sinistras. Com gráficos realistas e efeitos sonoros imersivos, o jogo cria uma atmosfera de tensão e adrenalina, onde cada decisão pode ter consequências de longo alcance.",
     images: [
       {
         alt: "image 1 do jogo 1",
@@ -178,23 +182,35 @@ export class JogoComponent implements OnInit {
   gameAbout = "";
 
   id: string = "0";
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.id = params.get("id") || "1";
 
-      const jogo = jogos.find((j) => j.id === this.id);
+      if (
+        !(
+          this.id === "tiro-2077" ||
+          this.id === "cacada-cruel" ||
+          this.id === "esquadrao-de-elite" ||
+          this.id === "furia-flonteirica" ||
+          this.id === "blitz-tatica"
+        )
+      ) {
+        this.router.navigateByUrl("/home");
+      } else {
+        const jogo = jogos.find((j) => j.id === this.id);
 
-      this.gameName = jogo?.name || "";
-      this.gameImage1 = jogo?.images[0].path || "";
-      this.gameImage2 = jogo?.images[1].path || "";
-      this.gameImage3 = jogo?.images[2].path || "";
-      this.gameImage4 = jogo?.images[3].path || "";
-      this.gameDescription = jogo?.gameDescription || "";
-      this.gameCategory = jogo?.gameCategory || "";
-      this.gameYearOld = jogo?.gameYearOld || "";
-      this.gameHistory = jogo?.gameHistory || "";
+        this.gameName = jogo?.name || "";
+        this.gameImage1 = jogo?.images[0].path || "";
+        this.gameImage2 = jogo?.images[1].path || "";
+        this.gameImage3 = jogo?.images[2].path || "";
+        this.gameImage4 = jogo?.images[3].path || "";
+        this.gameDescription = jogo?.gameDescription || "";
+        this.gameCategory = jogo?.gameCategory || "";
+        this.gameYearOld = jogo?.gameYearOld || "";
+        this.gameHistory = jogo?.gameHistory || "";
+      }
     });
   }
 }
