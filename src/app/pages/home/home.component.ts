@@ -2,6 +2,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { CardGameComponent } from "../../components/card-game/card-game.component";
 import { NoticeComponent } from "../../components/notice/notice.component";
+import { ButtonsComponent } from "../../components/buttons/buttons.component";
+import { LoadingComponent } from "../../components/loading/loading.component";
 
 export type gamelist = {
   image: string;
@@ -13,7 +15,7 @@ export type gamelist = {
 @Component({
   selector: "app-home",
   standalone: true,
-  imports: [CommonModule, CardGameComponent, NoticeComponent],
+  imports: [CommonModule, CardGameComponent, NoticeComponent, ButtonsComponent, LoadingComponent],
   templateUrl: "./home.component.html",
   styleUrl: "./home.component.css",
 })
@@ -59,4 +61,28 @@ export class HomeComponent {
       id: "blitz-tatica",
     },
   ];
+
+  teste: string = "N/A";
+
+  funcTeste = (param: string) => {
+    this.teste = param;
+  }
+
+  // abrirForm = () => {
+  //   const divForm = document.getElementById("form");
+  //   const divWeb = document.getElementById("router");
+  //   console.log("Função Chamada");
+  //   if (divForm?.style.display == "none" && divWeb?.style.display == "flex") {
+  //     divForm.style.display = "flex";
+  //     divWeb.style.display = "none";
+  //     console.log("FORM ATIVO");
+  //   } else if (
+  //     divForm?.style.display == "flex" &&
+  //     divWeb?.style.display == "none"
+  //   ) {
+  //     divForm.style.display = "none";
+  //     divWeb.style.display = "flex";
+  //     console.log("FORM DESATIVADO");
+  //   }
+  // };
 }
