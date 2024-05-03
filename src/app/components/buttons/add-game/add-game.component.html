@@ -1,0 +1,35 @@
+<h2 mat-dialog-title align="center">SOLICITAÇÃO</h2>
+<mat-dialog-content class="formCustom mat-typography">
+  <mat-form-field>
+    <mat-label>Nome do Jogo</mat-label>
+    <input matInput type="text" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Breve Descrição</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Idade Minima</mat-label>
+    <input matInput type="number" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Categoria</mat-label>
+    <input
+      type="text"
+      aria-label="text"
+      matInput
+      [formControl]="myControl"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete">
+      @for (option of options; track option) {
+      <mat-option [value]="option">{{ option }}</mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Enviar</button>
+  <button mat-button mat-dialog-close>Cancelar</button>
+</mat-dialog-actions>

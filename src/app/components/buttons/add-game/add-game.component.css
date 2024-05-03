@@ -1,0 +1,4 @@
+.formCustom {
+    display: flex; 
+    flex-direction: column;
+}
