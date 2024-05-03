@@ -23,17 +23,6 @@
   flex-direction: column;
   gap: 0.5vw;
 }
-.otherNotice::-webkit-scrollbar {
-  width: 0.3vw;
-}
-.otherNotice::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.171);
-}
-
-.otherNotice::-webkit-scrollbar-thumb {
-  border-radius: 2vw;
-  border: 1vw solid rgb(3, 3, 3);
-}
 
 .otherNotice img {
   width: 10vw;
