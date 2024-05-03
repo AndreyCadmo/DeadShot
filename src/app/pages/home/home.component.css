@@ -3,23 +3,6 @@
   justify-content: space-between;
 }
 
-.buttons {
-  margin: 2vw 0;
-  display: flex;
-  gap: 2vw;
-}
-
-.buttons button {
-  flex: 1;
-  color: var(--font-color);
-  background-color: var(--buttons-home);
-  border: none;
-  font-size: 1.2vw;
-  border-radius: 1vw;
-  padding: 1vw 0;
-  cursor: pointer;
-}
-
 .maisJogados,
 .maisJogados img,
 .promocao {
@@ -59,7 +42,8 @@ p {
   filter: var(--sobreamento);
 }
 
-.maisJogados:hover , .promocao:hover {
+.maisJogados:hover,
+.promocao:hover {
   opacity: 80%;
   cursor: pointer;
 }
