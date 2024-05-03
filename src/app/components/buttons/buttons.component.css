@@ -1,0 +1,16 @@
+.buttons {
+  margin: 2vw 0;
+  display: flex;
+  gap: 2vw;
+}
+
+.buttons button {
+  flex: 1;
+  color: var(--font-color);
+  background-color: var(--buttons-home);
+  border: none;
+  font-size: 1.2vw;
+  border-radius: 1vw;
+  padding: 1vw 0;
+  cursor: pointer;
+}
