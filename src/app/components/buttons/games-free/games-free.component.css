@@ -1,0 +1,12 @@
+.formCustom {
+    display: flex; 
+    flex-direction: row;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 2vw;
+}
