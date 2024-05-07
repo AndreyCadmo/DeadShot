@@ -11,6 +11,10 @@ header .icon {
   font-size: 1.3vw;
 }
 
+.icon {
+  cursor: pointer;
+}
+
 header .icon img {
     width: 6vw;
 }
