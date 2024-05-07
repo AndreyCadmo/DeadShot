@@ -1,0 +1,10 @@
+<h2 mat-dialog-title align="center">MAIS JOGADOS</h2>
+<mat-dialog-content class="mostCustom mat-typography">
+    <div class="most-played">
+      <app-card-game *ngFor="let content of cards" [game]="content">
+      </app-card-game>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Sair</button>
+</mat-dialog-actions>
