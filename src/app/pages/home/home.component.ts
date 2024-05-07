@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 import { CardGameComponent } from "../../components/card-game/card-game.component";
 import { NoticeComponent } from "../../components/notice/notice.component";
 import { ButtonsComponent } from "../../components/buttons/buttons.component";
+import { RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
 
 export type gamelist = {
   image: string;
@@ -14,7 +15,15 @@ export type gamelist = {
 @Component({
   selector: "app-home",
   standalone: true,
-  imports: [CommonModule, CardGameComponent, NoticeComponent, ButtonsComponent],
+  imports: [
+    CommonModule,
+    CardGameComponent,
+    NoticeComponent,
+    ButtonsComponent,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+  ],
   templateUrl: "./home.component.html",
   styleUrl: "./home.component.css",
 })
