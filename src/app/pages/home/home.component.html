@@ -13,17 +13,12 @@
 <app-buttons></app-buttons>
 
 <section class="category">
-  <div
-    class="maisJogados"
-    routerLink="/mais-jogados"
-    routerLinkActive="active"
-    ariaCurrentWhenActive="page"
-  >
+  <div class="maisJogados" (click)="openMostPlayed()">
     <div class="maisJogados1">
       <h1>MAIS JOGADOS</h1>
     </div>
   </div>
-  <div class="promocao">
+  <div class="promocao" (click)="openPromotion()">
     <h1>PROMOÇÕES</h1>
     <p>NOVAS PROMOÇÕES TODAS AS SEMANAS</p>
   </div>
