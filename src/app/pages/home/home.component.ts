@@ -4,6 +4,9 @@ import { CardGameComponent } from "../../components/card-game/card-game.componen
 import { NoticeComponent } from "../../components/notice/notice.component";
 import { ButtonsComponent } from "../../components/buttons/buttons.component";
 import { RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
+import { MatDialog } from "@angular/material/dialog";
+import { PromotionComponent } from "../../components/promotion/promotion.component";
+import { MostPlayedComponent } from "../../components/most-played/most-played.component";
 
 export type gamelist = {
   image: string;
@@ -28,6 +31,7 @@ export type gamelist = {
   styleUrl: "./home.component.css",
 })
 export class HomeComponent {
+  constructor(public dialog: MatDialog) {}
   imageUrl = "../../../../../assets/notice/noticeOne.png";
 
   mudarImage = (image: string) => {
@@ -35,6 +39,26 @@ export class HomeComponent {
       this.imageUrl = image;
     }
   };
+
+  openPromotion() {
+    const dialogRef = this.dialog.open(PromotionComponent, {
+      minWidth: "90vw",
+      minHeight: "40vw",
+    });
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+  
+  openMostPlayed() {
+    const dialogRef = this.dialog.open(MostPlayedComponent, {
+      minWidth: "90vw",
+      minHeight: "40vw",
+    });
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   cards: gamelist[] = [
     {
